@@ -1,0 +1,4 @@
+Shipment_ID	Lot_Number	Destination_Hospital	Sensors_Active	Thermal_Status	Chain_of_Custody_Signature	Delivery_Status
+SH-99201	VND-1600-01	PHMC-Seattle Receiving	TRUE	-2.4C (STABLE)	Signed_MD_Auth	Delivered_Reconciled
+SH-99202	ECT-02OZ-09	UW_Medical_Center	TRUE	+4.1C (STABLE)	Signed_PharmD	Delivered_Reconciled
+SH-99203	PFK-240M-03	Pathology_Clinic_East	TRUE	-1.8C (STABLE)	Pending_Bay_4	In_Transit
