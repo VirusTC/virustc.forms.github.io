@@ -1,0 +1,4 @@
+Log_ID	Provider_Name	Provider_Role	Specialty_Track	Telehealth_Hours	Consultative_Hours	Resident_Supervision_Hours	Status
+HR-001	Dr. Hofstad	Attending Physician	Oncology / Pathology	40.0	20.0	15.0	Approved
+HR-002	Dr. Resident_A	Medical Resident	Integrative Medicine	35.0	10.0	0.0	Pending_Review
+HR-003	Dr. Consult_B	Attending Provider	Regenerative Med	12.5	30.0	5.0	Approved
