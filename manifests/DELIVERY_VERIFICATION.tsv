@@ -1,0 +1,4 @@
+Verification_ID	Associated_Prescription_ID	Fulfillment_Hub_Source	Transit_Carrier_ID	Device_Telemetry_ID	Receiver_Hospital_Unit	Verification_Timestamp	Status
+VLOG-7701	TX-88201	Hub-01-Alpha	FedEx-ColdChain-991	CELL-LOG-404	Oncology ICU Room 402	2026-07-15T14:22:00Z	RECONCILED
+VLOG-7702	TX-88202	Hub-03-Gamma	UPS-Express-882	CELL-LOG-911	Tropical Disease Isolation Bay 2	2026-07-15T15:45:00Z	RECONCILED
+VLOG-7703	TX-88203	Hub-01-Alpha	DHL-Clinical-102	CELL-LOG-115	Regenerative Outpatient Suite C	Pending_Arrival	IN_TRANSIT
