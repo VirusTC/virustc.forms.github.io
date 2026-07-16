@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirusTC Forms</title>
+    <!-- Include GitHub's official Primer CSS and Octicons for an authentic look -->
+    <link href="https://unpkg.com" rel="stylesheet" />
+    <link href="https://unpkg.com" rel="stylesheet" />
+    <style>
+        :root {
+            --color-canvas-default: #ffffff;
+            --color-canvas-subtle: #f6f8fa;
+            --color-border-default: #d0d7de;
+            --color-border-muted: #hsla(210,18%,87%,1);
+            --color-fg-default: #1f2328;
+            --color-fg-muted: #656d76;
+            --color-accent-fg: #0969da;
+            --color-success-fg: #1a7f37;
+        }
+
+        body {
+            background-color: var(--color-canvas-default);
+            color: var(--color-fg-default);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+        }
+
+        /* Top Navbar */
+        .gh-header {
+            background-color: #24292f;
+            padding: 16px 32px;
+            color: rgba(255,255,255,0.85);
+            display: flex;
+            align-items: center;
+        }
+        .gh-header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Profile Layout */
+        .profile-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 24px 32px;
+            display: grid;
+            grid-template-columns: 296px 1fr;
+            gap: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .profile-container {
+                grid-template-columns: 1fr;
+                padding: 16px;
+                gap: 16px;
+            }
+            .gh-sidebar {
+                text-align: center;
+            }
+            .avatar-container {
+                margin: 0 auto !important;
+            }
+        }
+
+        /* Sidebar Styling */
+        .avatar-container {
+            width: 296px;
+            height: 296px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid var(--color-border-default);
+            margin-bottom: 16px;
+        }
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navigation Tabs */
+        .gh-tabs {
+            border-bottom: 1px solid var(--color-border-default);
+            margin-bottom: 24px;
+            display: flex;
+            gap: 8px;
+        }
+        .gh-tab {
+            padding: 8px 16px;
+            text-decoration: none;
+            color: var(--color-fg-default);
+            border-bottom: 2px solid transparent;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .gh-tab.active {
+            font-weight: 600;
+            border-bottom-color: #fd8c73; /* Organization active tab color */
+        }
+        .gh-tab .Counter {
+            background-color: var(--color-canvas-subtle);
+            color: var(--color-fg-muted);
+            border: 1px solid var(--color-border-default);
+        }
+
+        /* Form / Repository Cards Grid */
+        .forms-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        .form-card {
+            border-top: 1px solid var(--color-border-muted);
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .form-card:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+        .form-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .form-title a {
+            color: var(--color-accent-fg);
+            text-decoration: none;
+        }
+        .form-title a:hover {
+            text-decoration: underline;
+        }
+        .form-desc {
+            color: var(--color-fg-muted);
+            font-size: 14px;
+            margin-bottom: 8px;
+            max-width: 600px;
+        }
+        .form-meta {
+            font-size: 12px;
+            color: var(--color-fg-muted);
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .form-badge {
+            font-size: 12px;
+            font-weight: 500;
+            padding: 2px 7px;
+            border: 1px solid var(--color-border-default);
+            border-radius: 2em;
+            color: var(--color-fg-muted);
+        }
+        .medical-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .medical-tag-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #0969da; /* Blue for Forms */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navbar mimicking GitHub -->
+    <header class="gh-header">
+        <div class="d-flex flex-items-center">
+            <span class="octicon octicon-mark-github mr-2" style="font-size: 32px; fill: white;"></span>
+            <a href="https://github.com" class="f4">VirusTC</a>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        
+        <!-- Left Sidebar: Profile Info -->
+        <aside class="gh-sidebar">
+            <div class="avatar-container">
+                <!-- Using standard placeholder; replaced by styling with GitHub avatar later -->
+                <img src="https://github.com.png" alt="VirusTC Logo">
+            </div>
+            <h1 class="f3 lh-condensed mb-1">VirusTC</h1>
+            <div class="f4 text-bold color-fg-muted mb-3">virustc.forms.github.io</div>
+            <p class="color-fg-muted f5 mb-3">Secure, accessible clinical intake and medical registry forms.</p>
+            
+            <div class="border-top pt-3 color-fg-muted f6">
+                <div class="d-flex flex-items-center mb-1">
+                    <span class="octicon octicon-location mr-2"></span> Medical Division
+                </div>
+                <div class="d-flex flex-items-center">
+                    <span class="octicon octicon-link mr-2"></span> <a href="https://github.com" style="color: var(--color-fg-default); font-weight: 600;">://github.com</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Content: Tabs and Forms List -->
+        <main class="gh-content">
+            
+            <!-- Navigation Sub-tabs -->
+            <nav class="gh-tabs">
+                <a href="#" class="gh-tab active">
+                    <span class="octicon octicon-repo mr-1"></span> Forms 
+                    <span class="Counter ml-1">3</span>
+                </a>
+                <a href="https://github.com" class="gh-tab" target="_blank">
+                    <span class="octicon octicon-organization mr-1"></span> GitHub Profile
+                </a>
+            </nav>
+
+            <!-- Search and Filter Row -->
+            <div class="d-flex flex-justify-between flex-items-center pb-3 mb-3 border-bottom">
+                <input type="text" class="form-control input-block input-contrast" placeholder="Search medical forms..." style="max-width: 320px;">
+                <span class="f6 color-fg-muted">Sorted by <strong>Last Updated</strong></span>
+            </div>
+
+            <!-- List of Forms mimicking Repositories -->
+            <div class="forms-grid">
+                
+                <!-- Form 1 -->
+                <div class="form-card">
+                    <div>
+                        <div class="form-title">
+                            <a href="patient-intake.html">patient-intake-form</a>
+                            <span class="form-badge ml-2">Public</span>
+                        </div>
+                        <p class="form-desc">Standard digital entry form for new clinical patients. Captures medical history, insurance configuration, and consent tracking.</p>
+                        <div class="form-meta">
+                            <span class="medical-tag">
+                                <span class="medical-tag-dot"></span> Custom HTML
+                            </span>
+                            <span>Updated 2 hours ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="patient-intake.html" class="btn btn-sm">Open Form</a>
+                    </div>
+                </div>
+
+                <!-- Form 2 -->
+                <div class="form-card">
+                    <div>
+                        <div class="form-title">
+                            <a href="telehealth-consent.html">telehealth-consent-release</a>
+                            <span class="form-badge ml-2">Public</span>
+                        </div>
+                        <p class="form-desc">HIPAA-compliant dynamic advisory signature agreement form specifically optimized for remote patient care sessions.</p>
+                        <div class="form-meta">
+                            <span class="medical-tag">
+                                <span class="medical-tag-dot" style="background-color: #319795;"></span> Typeform Embedded
+                            </span>
+                            <span>Updated 1 day ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="telehealth-consent.html" class="btn btn-sm">Open Form</a>
+                    </div>
+                </div>
+
+                <!-- Form 3 -->
+                <div class="form-card">
+                    <div>
+                        <div class="form-title">
+                            <a href="prescription-refill.html">rx-refill-request</a>
