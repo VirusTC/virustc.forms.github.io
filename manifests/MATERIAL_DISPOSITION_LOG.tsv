@@ -1,0 +1,5 @@
+Material_ID	Raw_Component_Common_Name	Botanical_Taxonomy	Sourcing_Origin_Farm	Organic_Cert_ID	Heavy_Metal_Check	Quarantine_Status	Disposition_Signoff
+MAT-LAV-01	Lavandula angustifolia	L. angustifolia	Farm-Northwest-09	ORG-2026-8811	ND_PASSED	RELEASED	Hofstad_MD
+MAT-ORI-02	Origanum vulgare	O. vulgare	Farm-Cascade-04	ORG-2026-4420	ND_PASSED	RELEASED	QA_Auth_1
+MAT-CIT-03	Citrus limon	C. limon	Farm-Socal-12	ORG-2026-9931	ND_PASSED	RELEASED	QA_Auth_1
+MAT-PIN-04	Pinus pinaster	P. pinaster	Farm-Maritime-02	ORG-2026-1055	FAIL_RETEST	QUARANTINED	HOLD_REVISE
